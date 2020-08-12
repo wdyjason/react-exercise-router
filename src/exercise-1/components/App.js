@@ -24,7 +24,6 @@ class App extends Component {
         <Router>
           <Header dataList={this.getDataList(dataJson)}></Header>
           <Switch>
-            <Route exact path="/" component={HomePage}/>
             <Route exact path="/my-profile" component={MyProfile}/>
             <Route exact path="/products" render={() => (
               <Products dataList={dataList}/>
@@ -37,6 +36,10 @@ class App extends Component {
               )}/> 
               })
             }
+             <Route exact path="/goods" render={() => (
+              <Products dataList={dataList}/>
+            )}/>
+            <Route path="/" component={HomePage}/>
           </Switch>
         </Router>
       </div>
