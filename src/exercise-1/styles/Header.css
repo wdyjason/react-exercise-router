@@ -1,0 +1,49 @@
+.my_header {
+    height:50px;
+    background-color: gray;
+}
+/* .my_header a {
+    float: right;
+    margin: 10px;
+    /* text-decoration: none; */
+    /* color: #000; */ 
+/* } */
+.navlink {
+    float: right;
+    margin: 10px;
+    text-decoration: none;
+    color: #000;
+}
+/* .link_home {
+    float: right;
+    margin: 10px;
+    text-decoration: none;
+    color: #000;
+}
+.link_my_profile {
+    float: right;
+    margin: 10px;
+    text-decoration: none;
+    color: #000;
+} */
+/* .link_about_us_act {
+    float: right;
+    margin: 10px;
+    color: #000;
+}
+.link_home_act {
+    float: right;
+    margin: 10px;
+    color: #000;
+}
+.link_my_profile_act {
+    float: right;
+    margin: 10px;
+    color: #000;
+} */
+.active {
+    float: right;
+    margin: 10px;
+    color: black;
+    text-decoration: underline;
+}
