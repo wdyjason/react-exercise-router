@@ -1,11 +1,31 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { withRouter, Redirect } from 'react-router';
+import { render } from 'react-dom';
 
-const User = () => {
+class User extends Component{
+  
+  checkParamsIsValid = () => {
+    let user = this.props.match.params.user;
+    let n = Number(user)
+    if (!!isNaN(n)) {
+      return false;
+    }
+    return true;
+  }
+
+  componentDidMount() {
+    if (!this.checkParamsIsValid()) {
+      this.props.history.push('/not-exist-path');
+    }
+  }
+
+ render() {
   return (
     <div>
       User profile page.
     </div>
   );
-};
+ }
+}
 
-export default User;
+export default withRouter(User);
